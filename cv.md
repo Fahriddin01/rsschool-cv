@@ -38,3 +38,11 @@ I am Fahridin, I am a programming instructor. I teach HTML/CSS/Javascript. I wan
 }
 Hello();
 ```
+## Education
+- Khujand Polytechnic institute of Tajik Technical University
+- Webflow Universy
+- Ilmhona
+
+## English 
+
+<blockquote>Basic</blockquote>

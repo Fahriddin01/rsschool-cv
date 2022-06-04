@@ -6,3 +6,7 @@
 - **Telegram:** https://t.me/fahridin93
 ## About
 I am Fahridin, I am a programming instructor. I teach HTML/CSS/Javascript. I want to get new knowledge from RS-SCHOOL and improve my skill.
+## Skills
+- HTML
+- CSS
+- JAVASCRIPT

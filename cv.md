@@ -10,3 +10,31 @@ I am Fahridin, I am a programming instructor. I teach HTML/CSS/Javascript. I wan
 - HTML
 - CSS
 - JAVASCRIPT
+- Webflow 
+- GitHub
+
+## Code Like this
+
+```javascript
+// main.js
+	window.addEventListener('DOMContentLoaded', function() { 
+    const closeBox = document.querySelector('.close_box');
+    const megaMenu = document.querySelector('.mega__menu');
+    const menuItem = document.querySelector('.menu__item.dropdown');
+    const hamburger= document.querySelector('.hamburger');
+    const mobilBox = document.querySelector('.mobil__box');
+
+    closeBox.addEventListener('click', ()=> {
+        megaMenu.style.display = 'none';
+    });
+    menuItem.addEventListener('mouseover',()=> {
+        megaMenu.style.display = 'block';
+    });
+    hamburger.addEventListener("click", () => {
+        hamburger.classList.toggle("active");
+        mobilBox.classList.toggle("active");
+      })
+});
+}
+Hello();
+```

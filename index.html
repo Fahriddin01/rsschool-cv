@@ -3,58 +3,107 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML CV</title>
 </head>
 <body>
-    <section class="cv__box">
-        <div class="container">
-            <div class="cv__row">
-                <div class="cv__left-box">
-                    <img src="img/fahridin.jpg" alt="fahriddin__image" class="main__image">
-                    <div class="social__box">
-                        <div class="contact__row">
-                            <a href="Tel:+992918575020" class="contact phone">+992 918 57 50 20</a>
-                            <a href="maito:Fahri010793@gmail.com" class="contact mail">Fahri010793@gmail.com</a>
-                        </div>
-                        <div class="contact__row">
-                           <h2 class="title">formation</h2>
-                           <p class="year">2020-2022</p>
-                           <p class="skill">Freelanser(webflow developer)</p>
-                           <p class="year">Jan 2022 - Jun 2022</p>
-                           <p class="skill">Frontend Developer</p>
-                        </div>
-                        <div class="contact__row">
-                            <h2 class="title">Language</h2>
-                            <p class="skill">Farsi - Native</p>
-                            <p class="skill">Russian - Native</p>
-                            <p class="skill">English - B1 Intermediate</p>
-                         </div>
-                    </div>
-                </div>
-                <div class="cv__right-box">
-                    <h1 class="name">Usmonov Fahriddin</h1>
-                    <p class="year skill">Frontend Developer</p>
-                    <p class="about">
-                        With experience in management 
-                        and configuration of web applications using technologies like HTML,
-                        CSS, and JavaScript  CMS like WordPress; 
-                        to improve the performance and functionality 
-                        for the user experience side.
-                    </p>
-                    <p class="skills">HTML - CSS-JAVASCRIPT - WEBFLOW - WORDPRESS</p>
-                    <p class="year skill">Teacher</p>
-                    <p class="about">
-                        I teach the basics of programming at Ilmhona in Tajikistan.
-                    </p>
-                    <p class="year skill">Frontend Developer</p>
-                    <p class="about">
-                        I work as a Frontend Developer at DNT-flow
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
+   <main class="main__wrap">
+       <header class="header">
+           <div class="container">
+            <nav class="nav">
+                <ul class="menu">
+                    <li class="menu__item"><a href="#" class="item__link">About</a></li>
+                    <li class="menu__item"><a href="#" class="item__link">My experience</a></li>
+                    <li class="menu__item"><a href="#" class="item__link">Education</a></li>
+                    <li class="menu__item"><a href="#" class="item__link">Projects</a></li>
+                </ul>
+            </nav>
+           </div>
+       </header>
+       <section class="about">
+           <div class="container">
+               <div class="about__wrapper">
+                   <h1 class="head__text">Hello,<br>
+                    I’m Fahriddin<br>
+                    Usmonov
+                  </h1>
+                  <img src="img/fahridin.jpg" alt="fahriddin" class="main-image">
+               </div>
+               <h2 class="title">Personal Infomation</h2>
+               <ul class="contacts">
+                   <li class="mail"><a href="mailto:fahri010793@gmail.com" class="contact__link">fahri010793@gmail.com</a></li>
+                   <li class="phone"><a href="tel:+992918575020" class="contact__link">+992918575020</a></li>
+               </ul>
+               <h2 class="title">About</h2>
+               <p class="about">
+                With experience in management and configuration of web applications using technologies like HTML, CSS, and JavaScript CMS like WordPress; to improve the performance and functionality for the user experience side.
+               </p>
+           </div>
+       </section>
+       <section class="exper">
+           <div class="container">
+            <h2 class="title">My experience</h2>
+            <ol class="exper">
+                <li class="exp__item">HTML</li>
+                <li class="exp__item">CSS</li>
+                <li class="exp__item">JAVASCRIPT</li>
+                <li class="exp__item">FIGMA</li>
+                <li class="exp__item">WEBFLOW</li>
+                <li class="exp__item">WORDPRESS</li>
+            </ol>
+            <h2 class="title">Code example</h2>
+            <pre class="code-wrap">
+                <code class="language-js hljs language-javascript">
+                    <span class="hljs-keyword">function</span> <span class="hljs-title function_">compose</span>(<span class="hljs-params"></span>) {
+                        <span class="hljs-keyword">let</span> funcs = <span class="hljs-title class_">Array</span>.<span class="hljs-title function_">from</span>(<span class="hljs-variable language_">arguments</span>);
+                        <span class="hljs-keyword">return</span> <span class="hljs-keyword">function</span> (<span class="hljs-params">x</span>) {
+                          <span class="hljs-keyword">if</span> (funcs.<span class="hljs-property">length</span>&lt; <span class="hljs-number">1</span>) <span class="hljs-keyword">return</span> x;
+                          <span class="hljs-keyword">let</span> f = funcs[funcs.<span class="hljs-property">length</span> - <span class="hljs-number">1</span>](x);
+                          <span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> i = funcs.<span class="hljs-property">length</span> - <span class="hljs-number">2</span>; i ≥ <span class="hljs-number">0</span>; i--) {
+                            f = funcs[i](f);
+                          }
+                          <span class="hljs-keyword">return</span> f;
+                        };
+                      }
+                </code>
+            </pre>
+           </div>
+       </section>
+       <section class="educat">
+           <div class="container">
+            <h2 class="title">Education</h2>
+            <ul class="education">
+                <li class="educat_item">Khujand Polytechnic institute of Tajik Technical University</li>
+                <li class="educat_item">Webflow</li>
+                <li class="educat_item">Ilmhona</li>
+            </ul>
+           </div>
+       </section>
+       <section class="project">
+           <div class="container">
+            <h2 class="title">Projects</h2>
+               <ul class="project_list">
+                   <li class="project_item"><a href="https://www.ikovatattoo.com/" class="proj_link">https://www.ikovatattoo.com/</a></li>
+                   <li class="project_item"><a href="https://lbc.net.ua/" class="proj_link">https://lbc.net.ua/</a></li>
+                   <li class="project_item"><a href="https://www.anastasiacucu.com/" class="proj_link">https://www.anastasiacucu.com/</a></li>
+                   <li class="project_item"><a href="https://lbc.net.ua/" class="proj_link">https://lbc.net.ua/</a></li>
+                   <li class="project_item"><a href="https://iddis-shop.ru/" class="proj_link">https://iddis-shop.ru/</a></li>
+               </ul>
+           </div>
+       </section>
+   </main>
+   <footer class="footer">
+       <div class="container">
+           <div class="footer_wrap">
+               <a href="https://github.com/Fahriddin01" class="git_link">GitHub</a>
+               <span class="time">2022</span>
+               <a href="https://rs.school/js-stage0/" class="rs-link"><img src="img/rs.svg" alt="rs-icon" class="rs-image"></a>
+           </div>
+       </div>
+   </footer>
 </body>
 </html>
